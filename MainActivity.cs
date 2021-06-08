@@ -52,7 +52,7 @@ namespace AppListadoClientesAzure
                 var Titulo = FindViewById<TextView>(Resource.Id.titulo);
                 Titulo.SetTypeface(typeface, TypefaceStyle.Italic);
                 var CuentadeAlmacenamiento = CloudStorageAccount.Parse
-                     ("DefaultEndpointsProtocol=https;AccountName=programacionmoviles;AccountKey=K4HLGMkMGB87LlncsykIQe5QO85Ges6DDZ1wjK8M7EFpZeR+k+7fKLm3uy3th+R6mvmYeDa6pf2sn62Q3dZkWg==;EndpointSuffix=core.windows.net");
+                     ("DefaultEndpointsProtocol=https;AccountName=*****;AccountKey=******;EndpointSuffix=core.windows.net");
                 var ClienteBlob = CuentadeAlmacenamiento.CreateCloudBlobClient();
                 var Contenedor = ClienteBlob.GetContainerReference("devs");
                 var TablaNoSQL = CuentadeAlmacenamiento.CreateCloudTableClient();
